@@ -125,8 +125,8 @@ body{
   } 
 
 .mainField{
-    width: 92.5%;
-    height: 77.3vh;
+    width: 93%;
+    height: 783px;
     background-color: #AC91FA;
     border-radius: 20px;
     display: flex;
@@ -342,12 +342,6 @@ body{
     justify-content: space-between;
   }
 
-.firstBlock{
-    color: white;
-    font-family: 'Roboto Flex', sans-serif;
-    font-size: 20px;
-}
-
   .secondBlock{
     scale: 1;
     width: 30%;
@@ -409,7 +403,7 @@ body{
 
 .vidgetContext{
     width: 95%;
-    height: 80%;
+    height: 90%;
     margin: auto;
     padding-top: 15px;
     overflow: hidden;
@@ -428,7 +422,7 @@ hr{
 .funcDiscription4,
 .funcDiscription5{
     width: 99%;
-    height: 95%;
+    height: 90%;
     background-color: white;
     border: 2.5px solid black;
     border-radius: 10px;
@@ -713,12 +707,13 @@ hr{
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
 }
 
 
 #MtoW, #moneyGain, #attendance{
     height: 40%;
+    width: 35%;
 }
 
 #MtoW svg{
