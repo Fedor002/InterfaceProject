@@ -173,7 +173,7 @@ const projectsWhole = document.querySelectorAll('.projects');
 tsechMap.addEventListener("click", function(event){
   tsechDiscription.querySelector('.equipmentInfo').innerHTML = "Оброудование номер -";
   var clickedEquipment = event.target.closest('.lineOfEquipment .equipmentIcon');
-
+try{
     tsechDiscription.querySelector('.equipmentInfo').innerHTML = tsechDiscription.querySelector('.equipmentInfo').innerHTML  + ` ${clickedEquipment.innerHTML}`;
 
     tsechDiscription.querySelector('.brigade№').innerHTML = "Бригада номер -";
@@ -229,6 +229,12 @@ tsechMap.addEventListener("click", function(event){
   }
   else{
     tsechDiscription.querySelector('.equipmentStatus').innerHTML = tsechDiscription.querySelector('.equipmentStatus').innerHTML  + ` Не известно`;  
+  }
+}
+  catch(e){
+    document.querySelector('.wholePlan').style.width = "100%";
+    tsechDiscription.classList.remove('activeBlock');
+    lastClickedEquipment = null;
   }
   
 });
