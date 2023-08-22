@@ -113,32 +113,31 @@ function sortTableWorker(columnIndex) {
 }
 
 //Развертка описания при нажатии на строку столбца
-// const ezhednevnik = document.querySelector('.firstBlock');
-// var lastClickedRow = null;
+const ezhednevnik = document.querySelector('.firstBlock');
+var lastClickedRow = 2;
 
-// ezhednevnik.addEventListener("click", function(event){
-//   var clickedRow = event.target.closest('tbody tr');
+ezhednevnik.addEventListener("click", function(event){
+  var clickedRow = event.target.closest('tbody tr');
 
-//   for (var i = document.querySelector('.secondBlock').children.length - 1; i >= 0; i--) {
-//     document.querySelector('.secondBlock').children[i].classList.remove('activeDiscription');
-// }
+  for (var i = document.querySelector('.secondBlock').children.length - 1; i >= 0; i--) {
+    document.querySelector('.secondBlock').children[i].classList.remove('activeDiscription');
+}
 
-//   if (clickedRow) {
-//     if (clickedRow === lastClickedRow) {
-//       // Повторное нажатие на строку
-//       document.querySelector('.firstBlock').style.width = "100%";
-//       document.querySelector('.secondBlock').style.display = "none";
-//       lastClickedRow = null;
-//       } 
-//     else {
-//       // event.target.closest('button').classList.add('activeButton');
-//       document.querySelector('.firstBlock').style.width = "70%";
-//       document.querySelector('.secondBlock').style.display = "block";
-//       document.getElementById(event.target.closest('tbody tr').getAttribute('data-target')).classList.add('activeDiscription');
-//       lastClickedRow = clickedRow;
-//     }
-//   }
-// })
+  if (clickedRow) {
+    if (clickedRow.rowIndex === lastClickedRow) {
+      // Повторное нажатие на строку
+      document.querySelector('.firstBlock').style.width = "100%";
+      document.querySelector('.secondBlock').style.display = "none";
+      lastClickedRow = null;
+      } 
+    else {
+      // event.target.closest('button').classList.add('activeButton');
+      document.querySelector('.firstBlock').style.width = "100%";
+      document.querySelector('.secondBlock').style.display = "block";
+      lastClickedRow = clickedRow.rowIndex;
+    }
+  }
+})
 
 //Развертка описания при нажатии на оборудование цеха
 const tsechMap = document.querySelector('.wholePlan');
