@@ -16,7 +16,6 @@
 }
 
 .resizable-widget:hover {
-  transform: scale(1.01);
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -581,7 +580,6 @@
   font-size: 20px;
   border-radius: 5px;
   flex-shrink: 0;
-  margin-bottom: 20px;
 }
 
 
@@ -594,7 +592,6 @@
   align-items: flex-start;
   padding: 10px;
   overflow: scroll;
-  gap: 55px;
   width: 90%;
   justify-content: flex-start;
 }
@@ -622,7 +619,6 @@
 .TsekhMap {
   width: 90%;
   padding: 20px;
-  max-height: 400px; /* Максимальная высота контейнера */
   overflow-y: auto; /* Вертикальная прокрутка при необходимости */
   display: flex;
   flex-wrap: wrap;
@@ -669,8 +665,8 @@
   overflow: scroll;
 }
 .workshop {
-  width: 80px;
-  height: 80px;
+  width: 25px;
+  height: 25px;
   border: 2px solid #222222; /* Добавляем обводку */
   border-radius: 10px;
   display: flex;

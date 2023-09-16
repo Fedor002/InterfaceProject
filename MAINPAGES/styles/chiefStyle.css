@@ -10,7 +10,7 @@
 }
 
 .TsekhMap_chief{
-    max-height: 300px;
+    height: 600px;
 }
 
 .sub-projects {
@@ -60,4 +60,42 @@
 
 #myTableWorker tr:hover{
     background-color: aliceblue;
+}
+.ShechMap{
+}
+
+.workshop:nth-child(2){
+    margin-left:0px;
+}
+
+.workshop:nth-child(3){
+    margin-left:80px;
+}
+
+.workshop:nth-child(4){    
+    margin-left: 35px;
+
+}
+
+.workshop:nth-child(5){    
+    margin-left: 134px;
+
+}
+
+.workshop:nth-child(6){    
+    left: -1120px;
+    top: 380px;
+
+}
+
+.workshop:nth-child(7){    
+    left: -900px;
+    top: 345px;
+
+}
+
+.equipmentIcon{
+    position: relative;
+    left: -700px;
+    top: 120px;
 }

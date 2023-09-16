@@ -229,6 +229,23 @@ try{
   else{
     tsechDiscription.querySelector('.equipmentStatus').innerHTML = tsechDiscription.querySelector('.equipmentStatus').innerHTML  + ` Не известно`;  
   }
+
+  tsechDiscription.querySelector('.equipmentName').innerHTML = `Наименование оборудования -`;
+  if(clickedEquipment.classList.contains('kran')){
+    tsechDiscription.querySelector('.equipmentName').innerHTML = tsechDiscription.querySelector('.equipmentName').innerHTML  + ` Кран козловой электрический грузоподъемностью 2 т с двумя талями`;
+  }
+  else if(clickedEquipment.classList.contains('press375')){
+    tsechDiscription.querySelector('.equipmentName').innerHTML = tsechDiscription.querySelector('.equipmentName').innerHTML  + ` пресс вертикальный портальный гидравлический листогибочный усилием 3,75 МН (375 тс);`;
+  }
+  else if(clickedEquipment.classList.contains('press4')){
+    tsechDiscription.querySelector('.equipmentName').innerHTML = tsechDiscription.querySelector('.equipmentName').innerHTML  + ` пресс вальцы трехвалковые открытые листогибочные гидравлические с изменяемой геометрией и рабочей длиной валка 4 м;`;
+  }
+  else if(clickedEquipment.classList.contains('press22')){
+    tsechDiscription.querySelector('.equipmentName').innerHTML = tsechDiscription.querySelector('.equipmentName').innerHTML  + ` пресс кромкогибочный усилием 2,2 МН (220 тс) с длиной ножа 4 м;`;
+  }
+  else{
+    tsechDiscription.querySelector('.equipmentName').innerHTML = tsechDiscription.querySelector('.equipmentName').innerHTML  + ` станок профилегибочный усилием 2,75 МН (275 тс);`;
+  }
 }
   catch(e){
     document.querySelector('.wholePlan').style.width = "100%";
